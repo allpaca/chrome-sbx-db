@@ -14,7 +14,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-966762](https://crbug.com/966762) | MojoJS POC | UAF in IndexedDB RequestComplete 2 | M-76, reward-10500 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-956597](https://crbug.com/956597) | HTML POC | UAF in ServiceWorkerPaymentInstrument | M-75, M-76, reward-5000 | [leecraso](https://crbug.com/?q=reporter%3Aleecraso%40gmail.com&can=1), [Guang Gong](https://crbug.com/?q=Guang%20Gong%20OR%20reporter%3Ahigongguang%40gmail.com&can=1) | - 
 [crbug-960484](https://crbug.com/960484) | MojoJS POC | UAF in SerialChooserController | M-75 | [jonorman](https://crbug.com/?q=reporter%3Ajonorman%40microsoft.com&can=1) | -
-[crbug-948172](https://crbug.com/948172) | Full Chain Exploit | PDF plugin is allowed to use Pepper Socket API | M-75 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [Full Chain Exploit](https://bugs.chromium.org/p/project-zero/issues/attachment?aid=402215&signed_aid=uJieSMQe19F_G21FV0OaCg==), [crbug-950005](https://crbug.com/950005), [p0-1813](https://crbug.com/project-zero/1813), [p0-1817](https://crbug.com/project-zero/1817)
+[crbug-948172](https://crbug.com/948172) | Full Chain Exploit | Logic Bug in PDF plugin using Pepper Socket API | M-75 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [Full Chain Exploit](https://bugs.chromium.org/p/project-zero/issues/attachment?aid=402215&signed_aid=uJieSMQe19F_G21FV0OaCg==), [crbug-950005](https://crbug.com/950005), [p0-1813](https://crbug.com/project-zero/1813), [p0-1817](https://crbug.com/project-zero/1817)
 [crbug-945370](https://crbug.com/945370) | HTML POC | UAF in IndexedDB DeleteRequest | M-75, reward-8000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-942898](https://crbug.com/942898) | HTML POC | UAF in  IndexedDB RequestComplete | M-74, reward-10000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-941746](https://crbug.com/941746) | Full Chain WriteUp | UAF in IndexedDBDatabase (Pwnium 2019) | CVE-2019-5826, M-73 | [Gengming Liu](https://crbug.com/?q=l.dmxcsnsbh%40gmail.com&can=1) | [BlackhatUSA2019](https://i.blackhat.com/USA-19/Wednesday/us-19-Feng-The-Most-Secure-Browser-Pwning-Chrome-From-2016-To-2019.pdf)
@@ -36,6 +36,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-826626](https://crbug.com/826626) | Patch POC | UAF in Blockfile Media Cache | CVE-2018-6085, M-66, reward-10000 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
 [crbug-794969](https://crbug.com/794969) | Patch POC | OOB Read in deserializing Mojo "Event" messages | M-65 | [Gal Beniamini](https://crbug.com/?q=reporter%3Alaginimaineb%40google.com&can=1) | -
 [crbug-791003](https://crbug.com/791003) | Patch POC | Logic Bug in "catalog" service | CVE-2018-6055, M-65 | [Gal Beniamini](https://crbug.com/?q=reporter%3Alaginimaineb%40google.com&can=1) | -
+[crbug-780708](https://crbug.com/780708) | WriteUp | Logic Bug in Android “googlechrome:” Scheme URL (Mobile Pwn2Own 2017) | M-65 | ? | -
 [crbug-778505](https://crbug.com/778505) | Patch POC | OOB Write in QUIC | CVE-2017-15407, M-65, reward-10500 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
 [crbug-777728](https://crbug.com/777728) | Patch POC | Stack Overflow in QUIC | CVE-2017-15398, M-76, reward-10500 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
 [crbug-728887](https://crbug.com/728887) | Patch POC | UAF in IndexedDB OpenCursor | CVE-2017-5091, M-60, reward-10000 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
@@ -54,7 +55,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-551044](https://crbug.com/551044) | Patch, Webserver POC | Memory Corruption in AppCacheUpdateJob | CVE-2015-6766, M-47, M-48, reward-11337 | [gzobqq](https://crbug.com/?q=reporter%3Agzobqq%40gmail.com&can=1) | -
 [crbug-484270](https://crbug.com/484270) | Webserver POC | Heap Overflow in CertificateResourceHandler | M-43 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | -
 [crbug-416449](https://crbug.com/416449) | Full Chain Exploit | OOB Write in P2PHostMsg_Send IPC | CVE-2014-3188, M-38, reward-27634 | [Jüri Aedla](https://crbug.com/?q=reporter%3Aaedla%40chromium.org&can=1) | [crbug-416528](https://crbug.com/416528), [WriteUp](https://bugs.chromium.org/p/chromium/issues/attachment?aid=63680&signed_aid=Mz6eypMLGiZqfxRiO-8Agw==)
-[crbug-386988](https://crbug.com/386988) | Full Chain Exploit | Logic Bugs in Extension and WebUI | reward-30000 | [JungHoon Lee](https://crbug.com/?q=reporter%3Alkhz49%40gmail.com,lokihardt%40google.com&can=1) | [crbug-50275](https://crbug.com/50275), [crbug-367567](https://crbug.com/367567), [crbug-387033](https://crbug.com/387033), [crbug-387037](https://crbug.com/387037)
+[crbug-386988](https://crbug.com/386988) | Full Chain Exploit | Logic Bugs in Extension and WebUI | reward-30000 | [JungHoon Lee](https://crbug.com/?q=reporter%3Alkhz49%40gmail.com,lokihardt%40google.com&can=1) | [crbug-367567](https://crbug.com/367567), [crbug-387033](https://crbug.com/387033), [crbug-387037](https://crbug.com/387037), [crbug-50275](https://crbug.com/50275)
 [crbug-352369](https://crbug.com/352369) | Full Chain Exploit | Memory Corruption in Clipboard IPC (Pwn2Own 2014) | M-33 | [VUPEN](https://crbug.com/?q=VUPEN&can=1) | [crbug-352395](https://crbug.com/352395)
 [crbug-319117](https://crbug.com/319117) | Full Chain Exploit | Memory Corruption in Clipboard IPC (Mobile Pwn2Own 2013) | CVE-2013-6632, M-31, M-32 | [Pinkie Pie](https://crbug.com/?q=Pinkie%20Pie%20OR%20reporter%3A70696e6b6965706965%40gmail.com&can=1) | [crbug-319125](https://crbug.com/319125), [WriteUp](https://docs.google.com/document/d/1tHElG04AJR5OR2Ex-m_Jsmc8S5fAbRB3s4RmTG_PFnw/edit)
 
@@ -67,6 +68,8 @@ Issue | Type | Summary | Label | Reporter | Links
 
 Issue Number | Patch Version | Summary | Reporter 
 -- | -- | -- | -- 
+[crbug-1024121](https://crbug.com/1024121) | [78.0.3904.108](https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13723: Use-after-free in Bluetooth (Not Sure SBX) | Yuxiang Li
+[crbug-1024116](https://crbug.com/1024116) | [78.0.3904.108](https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13724: Out-of-bounds access in Bluetooth (Not Sure SBX) | Yuxiang Li
 [crbug-1019226](https://crbug.com/1019226) | [78.0.3904.87](https://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_31.html) | [$TBD] High CVE-2019-13720: Use-after-free in audio (Not Sure SBX) | Anton Ivanov, Alexey Kulaev
 [crbug-1001503](https://crbug.com/1001503) | [78.0.3904.70](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_22.html) | [$20000] High CVE-2019-13699: Use-after-free in media | Man Yue Mo
 [crbug-1005753](https://crbug.com/1005753) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$20500] High CVE-2019-13693: Use-after-free in IndexedDB |  Guang Gong
@@ -76,13 +79,42 @@ Issue Number | Patch Version | Summary | Reporter
 [crbug-998548](https://crbug.com/998548) | [77.0.3865.90](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop_18.html) | [$20000] High CVE-2019-13688: Use-after-free in media | Man Yue Mo
 [crbug-1000002](https://crbug.com/1000002) | [77.0.3865.90](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13686: Use-after-free in offline pages | Brendon Tiszka
 [crbug-999311](https://crbug.com/999311) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$30000] Critical CVE-2019-5870: Use-after-free in media | Guang Gong
-[crbug-981492](https://crbug.com/981492) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$3000] High CVE-2019-5872: Use-after-free in Mojo | Zhe Jin，Luyao Liu
 [crbug-989797](https://crbug.com/989797) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$3000] High CVE-2019-5874: External URIs may trigger other browsers | James Lee
 [crbug-997190](https://crbug.com/997190) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$20000] High CVE-2019-5876: Use-after-free in media | Man Yue Mo
 [crbug-959438](https://crbug.com/959438) | [76.0.3809.87](http://chromereleases.googleblog.com/2019/07/stable-channel-update-for-desktop_30.html) | [$TBD] High CVE-2019-5859: Some URIs can load alternative browsers | James Lee
 
 * It only includes Permission Denied Issues posted on [Chrome Releases Blog](https://chromereleases.googleblog.com/) (Latest 3 years).
 * It was searched by hands, so there may be something missing, too.  
+
+## Chrome Sandbox Internals
+* [Stanford seclab - The Security Architecture of the Chromium Browser (2008)](https://seclab.stanford.edu/websec/chromium/chromium-security-architecture.pdf), [PPT](https://pdfs.semanticscholar.org/8a02/1c9c69effbdd159838ac5204d9da4e996f86.pdf)
+* [Chromium Docs - Sandbox](https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md)
+* [Chromium Docs - Sandbox FAQ](https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox_faq.md)
+* [Chromium Docs - WebUI Explainer](https://chromium.googlesource.com/chromium/src/+/master/docs/webui_explainer.md)
+* [Chromium Docs - Mojo](https://chromium.googlesource.com/chromium/src/+/master/mojo/README.md)
+* [Chromium Docs - Intro to Mojo & Services](https://chromium.googlesource.com/chromium/src/+/master/docs/mojo_and_services.md)
+* [Chromium Docs - Mojo Basics](https://chromium.googlesource.com/chromium/src/+/master/mojo/docs/basics.md)
+* [Chromium Docs - Mojo IDL](https://chromium.googlesource.com/chromium/src/+/master/mojo/public/tools/bindings/README.md)
+* [Chromium Docs - Mojo C System API](https://chromium.googlesource.com/chromium/src/+/master/mojo/public/c/system/README.md)
+* [Chromium Docs - Mojo C++ Bindings API](https://chromium.googlesource.com/chromium/src/+/master/mojo/public/cpp/bindings/README.md)
+* [Chromium Docs - Mojo JavaScript Bindings API](https://chromium.googlesource.com/chromium/src/+/master/mojo/public/js/README.md)
+* [Chromium Docs - Mojo “Style” Guide](https://chromium.googlesource.com/chromium/src/+/master/docs/security/mojo.md)
+* [Chromium Docs - Converting Legacy IPC to Mojo](https://chromium.googlesource.com/chromium/src/+/master/docs/mojo_ipc_conversion.md)
+* [Chromium Docs - The Service Manager & Services](https://chromium.googlesource.com/chromium/src/+/master/services/service_manager/README.md)
+* [Chromium Docs - Service Development Guidelines](https://chromium.googlesource.com/chromium/src/+/master/services/README.md)
+* [Chromium Docs - Servicifying Chromium Features](https://chromium.googlesource.com/chromium/src/+/master/docs/servicification.md)
+* [Google Docs - Chrome Service Model](https://docs.google.com/document/d/15I7sQyQo6zsqXVNAlVd520tdGaS8FCicZHrN0yRu-oU)
+* [Google Docs - Blob Servicification](https://docs.google.com/document/d/1_ROmusFvd8ATwIZa29-P6Ls5yyLjfld0KvKchVfA84Y)
+* [Google Docs - Device Service in Chromium](https://docs.google.com/document/d/1k0caAXgSchvXzkzwZYxudZRNpwtFWUkgvQInlw-fKuY)
+* [Google Docs - Device Service: Technical Approach](https://docs.google.com/document/d/1_1Vt4ShJCiM3fin-leaZx00-FoIPisOr8kwAKsg-Des)
+* [Google Docs - Device Service: Extraction from the Content Layer](https://docs.google.com/document/d/1UVFBfz8XajKwFYUtcjvPTOp4gEFRgCZ_hqz_gDO8LBo/edit#heading=h.z3q403opm2na)
+* [Google Docs - Identity Service: Technical Approach](https://docs.google.com/document/d/1EPLEJTZewjiShBemNP5Zyk3b_9sgdbrZlXn7j1fubW0)
+* [Google Docs - Network Service in Chrome](https://docs.google.com/document/d/1wAHLw9h7gGuqJNCgG1mP1BmLtCGfZ2pys-PdZQ1vg7M)
+* [Google Docs - Network Service Conversion Cheat Sheet](https://docs.google.com/document/d/1OyBYvN0dwvpqfSZBdsfZ29iTFqGnVS2sdiPV14Z-Fto)
+* [Google Docs - Per-Profile Mojo Services](https://docs.google.com/document/d/1Fj013SXClTzk4Yfq2eoL9OkKfN0h-GLXPAokCXFkcTY)
+* [Google Docs - Pref Service](https://docs.google.com/document/d/1JU8QUWxMEXWMqgkvFUumKSxr7Z-nfq0YvreSJTkMVmU)
+* [The Chromium Projects - Security Tips for IPC](https://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc)
+* [hidd3ncod3s blog - Chrome IPC Internals](https://hiddencodes.wordpress.com/2012/08/07/chrome-ipc-internals-part-i/)
 
 ## Other Materials 
 * [Blue Forest Security (2019) - Escaping the Chrome Sandbox via an IndexedDB Race Condition](https://labs.bluefrostsecurity.de/blog/2019/08/08/escaping-the-chrome-sandbox-via-an-indexeddb-race-condition/) 
