@@ -17,7 +17,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-948172](https://crbug.com/948172) | Full Chain Exploit | Logic Bug in PDF plugin using Pepper Socket API | M-75 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [Full Chain Exploit](https://bugs.chromium.org/p/project-zero/issues/attachment?aid=402215&signed_aid=uJieSMQe19F_G21FV0OaCg==), [crbug-950005](https://crbug.com/950005), [p0-1813](https://crbug.com/project-zero/1813), [p0-1817](https://crbug.com/project-zero/1817)
 [crbug-945370](https://crbug.com/945370) | HTML POC | UAF in IndexedDB DeleteRequest | M-75, reward-8000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
 [crbug-942898](https://crbug.com/942898) | HTML POC | UAF in  IndexedDB RequestComplete | M-74, reward-10000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
-[crbug-941746](https://crbug.com/941746) | Full Chain WriteUp | UAF in IndexedDBDatabase (Pwnium 2019) | CVE-2019-5826, M-73 | [Gengming Liu](https://crbug.com/?q=l.dmxcsnsbh%40gmail.com&can=1) | [BlackhatUSA2019](https://i.blackhat.com/USA-19/Wednesday/us-19-Feng-The-Most-Secure-Browser-Pwning-Chrome-From-2016-To-2019.pdf)
+[crbug-941746](https://crbug.com/941746) | Full Chain WriteUp | UAF in IndexedDBDatabase (Pwnium 2019) | CVE-2019-5826, M-73 | [Gengming Liu](https://crbug.com/?q=l.dmxcsnsbh%40gmail.com&can=1) | [BlackhatUSA2019](https://i.blackhat.com/USA-19/Wednesday/us-19-Feng-The-Most-Secure-Browser-Pwning-Chrome-From-2016-To-2019.pdf), [POC2019](http://www.powerofcommunity.net/poc2019/Gengming.pdf)
 [crbug-941008](https://crbug.com/941008) | MojoJS POC | UAF in FileChooserImpl | CVE-2019-5809, M-73, M-74, M-75 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1803](https://crbug.com/project-zero/1803)
 [crbug-925864](https://crbug.com/925864) | MojoJS POC | UAF in FileSystemOperationRunner | CVE-2019-5788, M-73 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1767](https://crbug.com/project-zero/1767) 
 [crbug-922677](https://crbug.com/922677) | Full Chain Exploit | UAF in FileWriterImpl | M-71 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [Full Chain Exploit](https://bugs.chromium.org/p/project-zero/issues/attachment?aid=388589&signed_aid=l6i6pjLBlXcNkkKWiDvd9A==), [p0-1755](https://crbug.com/project-zero/1755), [P0 Blog](https://googleprojectzero.blogspot.com/2019/04/virtually-unlimited-memory-escaping.html)
@@ -37,6 +37,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-794969](https://crbug.com/794969) | Patch POC | OOB Read in deserializing Mojo "Event" messages | M-65 | [Gal Beniamini](https://crbug.com/?q=reporter%3Alaginimaineb%40google.com&can=1) | -
 [crbug-791003](https://crbug.com/791003) | Patch POC | Logic Bug in "catalog" service | CVE-2018-6055, M-65 | [Gal Beniamini](https://crbug.com/?q=reporter%3Alaginimaineb%40google.com&can=1) | -
 [crbug-780708](https://crbug.com/780708) | WriteUp | Logic Bug in Android “googlechrome:” Scheme URL (Mobile Pwn2Own 2017) | M-65 | ? | -
+[crbug-779314](https://crbug.com/779314) | Patch POC |  OOB Read in Blob | CVE-2017-15416, M-65, reward-2500 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
 [crbug-778505](https://crbug.com/778505) | Patch POC | OOB Write in QUIC | CVE-2017-15407, M-65, reward-10500 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
 [crbug-777728](https://crbug.com/777728) | Patch POC | Stack Overflow in QUIC | CVE-2017-15398, M-76, reward-10500 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
 [crbug-728887](https://crbug.com/728887) | Patch POC | UAF in IndexedDB OpenCursor | CVE-2017-5091, M-60, reward-10000 | [Ned Williamson](https://crbug.com/?q=reporter%3Anedwilliamson%40gmail.com&can=1) | -
@@ -56,7 +57,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-484270](https://crbug.com/484270) | Webserver POC | Heap Overflow in CertificateResourceHandler | M-43 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | -
 [crbug-416449](https://crbug.com/416449) | Full Chain Exploit | OOB Write in P2PHostMsg_Send IPC | CVE-2014-3188, M-38, reward-27634 | [Jüri Aedla](https://crbug.com/?q=reporter%3Aaedla%40chromium.org&can=1) | [crbug-416528](https://crbug.com/416528), [WriteUp](https://bugs.chromium.org/p/chromium/issues/attachment?aid=63680&signed_aid=Mz6eypMLGiZqfxRiO-8Agw==)
 [crbug-386988](https://crbug.com/386988) | Full Chain Exploit | Logic Bugs in Extension and WebUI | reward-30000 | [JungHoon Lee](https://crbug.com/?q=reporter%3Alkhz49%40gmail.com,lokihardt%40google.com&can=1) | [crbug-367567](https://crbug.com/367567), [crbug-387033](https://crbug.com/387033), [crbug-387037](https://crbug.com/387037), [crbug-50275](https://crbug.com/50275)
-[crbug-352369](https://crbug.com/352369) | Full Chain Exploit | Memory Corruption in Clipboard IPC (Pwn2Own 2014) | M-33 | [VUPEN](https://crbug.com/?q=VUPEN&can=1) | [crbug-352395](https://crbug.com/352395)
+[crbug-352369](https://crbug.com/352369) | Full Chain Exploit | Memory Corruption in Clipboard IPC (Pwn2Own 2014) | M-33 | [VUPEN](https://crbug.com/?q=VUPEN&can=1) | [crbug-352395](https://crbug.com/352395), [Google Presentation](https://docs.google.com/presentation/d/1c90yZXNHs7w8oi7uXveEOCx5-8O_NZIxolEKalscuAQ)
 [crbug-319117](https://crbug.com/319117) | Full Chain Exploit | Memory Corruption in Clipboard IPC (Mobile Pwn2Own 2013) | CVE-2013-6632, M-31, M-32 | [Pinkie Pie](https://crbug.com/?q=Pinkie%20Pie%20OR%20reporter%3A70696e6b6965706965%40gmail.com&can=1) | [crbug-319125](https://crbug.com/319125), [WriteUp](https://docs.google.com/document/d/1tHElG04AJR5OR2Ex-m_Jsmc8S5fAbRB3s4RmTG_PFnw/edit)
 
 * It only includes Chrome Browser own Bugs like IPC(Mojo), WebAPI, WebUI, Extension.. (Not included using Kernel Bugs like [MWRLab's Pwn2own 2013 Exploit](https://labs.mwrinfosecurity.com/assets/BlogFiles/MWR-PolishingChrome-NSC-slides.pdf), [lokihardt's Pwn2Own 2015 Exploit](https://crbug.com/468933))  
@@ -104,6 +105,7 @@ Issue Number | Patch Version | Summary | Reporter
 * [Chromium Docs - Service Development Guidelines](https://chromium.googlesource.com/chromium/src/+/master/services/README.md)
 * [Chromium Docs - Servicifying Chromium Features](https://chromium.googlesource.com/chromium/src/+/master/docs/servicification.md)
 * [Google Docs - Chrome Service Model](https://docs.google.com/document/d/15I7sQyQo6zsqXVNAlVd520tdGaS8FCicZHrN0yRu-oU)
+* [Google Docs - Mojo Tutorial](https://docs.google.com/document/d/1mufrtxTk8w9qa3jcnlgqsYkWlyhwEpc7aWNaSOks7ug)
 * [Google Docs - Blob Servicification](https://docs.google.com/document/d/1_ROmusFvd8ATwIZa29-P6Ls5yyLjfld0KvKchVfA84Y)
 * [Google Docs - Device Service in Chromium](https://docs.google.com/document/d/1k0caAXgSchvXzkzwZYxudZRNpwtFWUkgvQInlw-fKuY)
 * [Google Docs - Device Service: Technical Approach](https://docs.google.com/document/d/1_1Vt4ShJCiM3fin-leaZx00-FoIPisOr8kwAKsg-Des)
@@ -113,6 +115,9 @@ Issue Number | Patch Version | Summary | Reporter
 * [Google Docs - Network Service Conversion Cheat Sheet](https://docs.google.com/document/d/1OyBYvN0dwvpqfSZBdsfZ29iTFqGnVS2sdiPV14Z-Fto)
 * [Google Docs - Per-Profile Mojo Services](https://docs.google.com/document/d/1Fj013SXClTzk4Yfq2eoL9OkKfN0h-GLXPAokCXFkcTY)
 * [Google Docs - Pref Service](https://docs.google.com/document/d/1JU8QUWxMEXWMqgkvFUumKSxr7Z-nfq0YvreSJTkMVmU)
+* [Google Drawing - Chrome Security Architecture](https://docs.google.com/drawings/d/1TuECFL9K7J5q5UePJLC-YH3satvb1RrjLRH-tW_VKeE)
+* [Google PDF - bpf_dsl: A domain-specific language for seccomp-bpf policies](https://drive.google.com/file/d/0B9LSc_-kpOQPVHhvcVBza3NWR0k)
+* [The Chromium Projects - OSX Sandboxing Design](http://dev.chromium.org/developers/design-documents/sandbox/osx-sandboxing-design)
 * [The Chromium Projects - Security Tips for IPC](https://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc)
 * [hidd3ncod3s blog - Chrome IPC Internals](https://hiddencodes.wordpress.com/2012/08/07/chrome-ipc-internals-part-i/)
 
@@ -123,8 +128,9 @@ Issue Number | Patch Version | Summary | Reporter
 * [Google CTF 2019 - monochromatic](https://github.com/google/google-ctf/tree/master/2019/quals/sandbox-monochromatic)  
 * [Google CTF 2018 - pwn-mojo](https://github.com/google/google-ctf/tree/master/2018/finals/pwn-mojo)  
 * [360 Alpha Team (CanSecWest 2018) - Attacks and analysis of the Samsung S8 from Mobile PWN2OWN](https://cansecwest.com/slides/2018/Attacks%20and%20Analysis%20of%20the%20Samsung%20S8%20from%20Mobile%20PWN2OWN%20-%20Guang%20Gong%20and%20Jianjun%20Dai,%20Qihoo%20360.pdf)
-* [KEEN Team (DEFCON 24) - Escaping The Sandbox By Not Breaking It](https://papers.put.as/papers/macosx/2016/sandbox_defcon.pdf)
-* [X41 - Browser Security White Paper](https://paper.seebug.org/papers/Archive/X41-Browser-Security-White-Paper.pdf)
+* [Microsoft Blog - Browser security beyond sandboxing (2017)](https://www.microsoft.com/security/blog/2017/10/18/browser-security-beyond-sandboxing/?source=mmpc)
+* [X41 - Browser Security White Paper (2017)](https://paper.seebug.org/papers/Archive/X41-Browser-Security-White-Paper.pdf)
+* [KEEN Team (DEFCON24 2016) - Escaping The Sandbox By Not Breaking It](https://papers.put.as/papers/macosx/2016/sandbox_defcon.pdf)
 * [James Forshaw (Troopers 2016) - The Joy of Sandbox Mitigations](https://www.troopers.de/media/filer_public/f6/07/f6076037-85e0-42b7-9a51-507986edafce/the_joy_of_sandbox_mitigations_export.pdf)
 * [James Forshaw (Nullcon 2015) - The Windows Sandbox Paradox](https://nullcon.net/website/archives/ppt/goa-15/the-windows-sandbox-paradox.pdf)
 * [Guang Gong (BlackHat USA 2015) - Fuzzing Android System Services by Binder Call to Escalate Privilege](https://www.blackhat.com/docs/us-15/materials/us-15-Gong-Fuzzing-Android-System-Services-By-Binder-Call-To-Escalate-Privilege.pdf)
