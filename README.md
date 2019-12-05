@@ -75,7 +75,6 @@ Issue Number | Patch Version | Summary | Reporter
 -- | -- | -- | -- 
 [crbug-1024121](https://crbug.com/1024121) | [78.0.3904.108](https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13723: Use-after-free in Bluetooth (Not Sure SBX) | Yuxiang Li
 [crbug-1024116](https://crbug.com/1024116) | [78.0.3904.108](https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13724: Out-of-bounds access in Bluetooth (Not Sure SBX) | Yuxiang Li
-[crbug-1019226](https://crbug.com/1019226) | [78.0.3904.87](https://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_31.html) | [$TBD] High CVE-2019-13720: Use-after-free in audio (Not Sure SBX) | Anton Ivanov, Alexey Kulaev
 [crbug-1001503](https://crbug.com/1001503) | [78.0.3904.70](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_22.html) | [$20000] High CVE-2019-13699: Use-after-free in media | Man Yue Mo
 [crbug-1005753](https://crbug.com/1005753) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$20500] High CVE-2019-13693: Use-after-free in IndexedDB |  Guang Gong
 [crbug-1004730](https://crbug.com/1004730) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$15000] High CVE-2019-13695: Use-after-free in audio | Man Yue Mo
