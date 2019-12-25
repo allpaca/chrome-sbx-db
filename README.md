@@ -132,9 +132,12 @@ Issue Number | Patch Version | Summary | Reporter
 * [hidd3ncod3s blog - Chrome IPC Internals](https://hiddencodes.wordpress.com/2012/08/07/chrome-ipc-internals-part-i/)
 
 ## Other Materials 
+* [Abdulrahman Al-Qabandi Blog (2019) - Microsoft Edge (Chromium): EoP via XSS to Potential RCE](https://leucosite.com/Edge-Chromium-EoP-RCE/)
 * [Blue Forest Security (2019) - Escaping the Chrome Sandbox via an IndexedDB Race Condition](https://labs.bluefrostsecurity.de/blog/2019/08/08/escaping-the-chrome-sandbox-via-an-indexeddb-race-condition/) 
+* [Exodus Intelligence (2019) - WINDOWS WITHIN WINDOWS: ESCAPING THE CHROME SANDBOX WITH A WIN32K NDAY](https://blog.exodusintel.com/2019/05/17/windows-within-windows/)
 * [Tencent Xuanwu Lab (Blackhat Asia 2019) - Attacking Browser Sandbox: Live Persistently and Prosperously](https://i.blackhat.com/asia-19/Fri-March-29/bh-asia-Ma-Attacking-Browser-Sandbox.pdf)
 * [WCTF 2019 - Mojojojo](https://drive.google.com/drive/u/0/folders/1xijouA9fj1YUrY97wyoEQCZ5Q3tRWNOq)  
+* [Eternal Stories (2019) - monochromatic writeup](http://eternal.red/2019/monochromatic-writeup/)
 * [Google CTF 2019 - monochromatic](https://github.com/google/google-ctf/tree/master/2019/quals/sandbox-monochromatic)  
 * [Google CTF 2018 - pwn-mojo](https://github.com/google/google-ctf/tree/master/2018/finals/pwn-mojo)  
 * [360 Alpha Team (CanSecWest 2018) - Attacks and analysis of the Samsung S8 from Mobile PWN2OWN](https://cansecwest.com/slides/2018/Attacks%20and%20Analysis%20of%20the%20Samsung%20S8%20from%20Mobile%20PWN2OWN%20-%20Guang%20Gong%20and%20Jianjun%20Dai,%20Qihoo%20360.pdf)
