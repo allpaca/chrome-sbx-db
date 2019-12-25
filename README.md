@@ -5,12 +5,16 @@ A Collection of Chrome Sandbox Escape POCs/Exploits for learning.
 
 Issue | Type | Summary | Label | Reporter | Links
 -- | -- | -- | -- | -- | --
-[crbug-997190](https://crbug.com/997190) | Patch POC | UAF in MediaSession (Android) | CVE-2019-5876, M-76, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=man%20yue%20mo) | -
+[crbug-1000934](https://crbug.com/1000934) | HTML POC | UAF in Sharing | CVE-2019-13685, M-77, M-78, reward-15000 | [chromium.khalil](https://crbug.com/?q=reporter%3Achromium.khalil%40gmail.com&can=1) | -
+[crbug-1000002](https://crbug.com/1000002) | MojoJS POC | UAF in OfflinePage2 (Android) | CVE-2019-13686, M-76, reward-20000 | [Brendon Tiszka](https://crbug.com/?q=reporter%3Abtiszka%40gmail.com&can=1) | -
+[crbug-998548](https://crbug.com/998548) | MojoJS POC | UAF in ImageCapture | CVE-2019-13687, M-76, M-77, M-78, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
+[crbug-997190](https://crbug.com/997190) | Patch POC | UAF in MediaSession (Android) | CVE-2019-5876, M-76, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
+[crbug-995964](https://crbug.com/995964) | MojoJS POC | UAF in VideoCapture | CVE-2019-13688, M-77, M-78, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
 [crbug-993223](https://crbug.com/993223) | HTML POC | UAF in Payment | M-77, reward-5000 | [chromium.khalil](https://crbug.com/?q=reporter%3Achromium.khalil%40gmail.com&can=1) | [crbug-992285](https://crbug.com/992285)
 [crbug-987261](https://crbug.com/987261) | HTML POC | Logic Bug in WebUI | - | [Vladimir Metnew](https://crbug.com/?q=reporter%3Avladimirmetnew%40gmail.com%20OR%20Vladimir%20Metnew&can=1) | -
 [crbug-984521](https://crbug.com/984521) | MojoJS POC | UAF in IndexedDB IndexedDBConnection::Close | M-76 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1912](https://crbug.com/project-zero/1912) 
 [crbug-981873](https://crbug.com/981873) | MojoJS POC | UAF in IndexedDB ~LevelDBIteratorImpl | M-76 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | [p0-1904](https://crbug.com/project-zero/1904) 
-[crbug-977462](https://crbug.com/977462) | MojoJS POC | UAF in OfflinePage | CVE-2019-5850, M-75, reward-10000 | [Brendon Tiszka](https://crbug.com/?q=reporter%3Abtiszka%40gmail.com&can=1) | - 
+[crbug-977462](https://crbug.com/977462) | MojoJS POC | UAF in OfflinePage (Android) | CVE-2019-5850, M-75, reward-10000 | [Brendon Tiszka](https://crbug.com/?q=reporter%3Abtiszka%40gmail.com&can=1) | [crbug-977195](https://crbug.com/977195) 
 [crbug-972239](https://crbug.com/972239#c26) | MojoJS POC | UAF in IndexedDB IndexedDBTransaction::Abort | M-76 | [Mark Brand](https://crbug.com/?q=reporter%3Amarkbrand%40google.com&can=1) | - 
 [crbug-971702](https://crbug.com/971702) | HTML POC | UAF in chrome!content::Portal::Activate | M-76, reward-8000 | [Pawel Wylecial](https://crbug.com/?q=reporter%3Apawel%40blackowlsec.com&can=1) | -
 [crbug-966784](https://crbug.com/966784) | MojoJS POC | UAF in IndexedDB AbortAllTransactions | M-76, reward-5000 | [cdsrc2016](https://crbug.com/?q=reporter%3Acdsrc2016%40gmail.com&can=1) | -
@@ -80,10 +84,6 @@ Issue Number | Patch Version | Summary | Reporter
 [crbug-1001503](https://crbug.com/1001503) | [78.0.3904.70](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_22.html) | [$20000] High CVE-2019-13699: Use-after-free in media | Man Yue Mo
 [crbug-1005753](https://crbug.com/1005753) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$20500] High CVE-2019-13693: Use-after-free in IndexedDB |  Guang Gong
 [crbug-1004730](https://crbug.com/1004730) | [77.0.3865.120](http://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop.html) | [$15000] High CVE-2019-13695: Use-after-free in audio | Man Yue Mo
-[crbug-1000934](https://crbug.com/1000934) | [77.0.3865.90](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop_18.html) | [$TBD] Critical CVE-2019-13685: Use-after-free in UI | Khalil Zhani
-[crbug-995964](https://crbug.com/995964) | [77.0.3865.90](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop_18.html) | [$20000] High CVE-2019-13688: Use-after-free in media | Man Yue Mo
-[crbug-998548](https://crbug.com/998548) | [77.0.3865.90](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop_18.html) | [$20000] High CVE-2019-13688: Use-after-free in media | Man Yue Mo
-[crbug-1000002](https://crbug.com/1000002) | [77.0.3865.90](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2019-13686: Use-after-free in offline pages | Brendon Tiszka
 [crbug-999311](https://crbug.com/999311) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$30000] Critical CVE-2019-5870: Use-after-free in media | Guang Gong
 [crbug-989797](https://crbug.com/989797) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$3000] High CVE-2019-5874: External URIs may trigger other browsers | James Lee
 [crbug-959438](https://crbug.com/959438) | [76.0.3809.87](http://chromereleases.googleblog.com/2019/07/stable-channel-update-for-desktop_30.html) | [$TBD] High CVE-2019-5859: Some URIs can load alternative browsers | James Lee
