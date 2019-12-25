@@ -9,6 +9,7 @@ Issue | Type | Summary | Label | Reporter | Links
 [crbug-1000002](https://crbug.com/1000002) | MojoJS POC | UAF in OfflinePage2 (Android) | CVE-2019-13686, M-76, reward-20000 | [Brendon Tiszka](https://crbug.com/?q=reporter%3Abtiszka%40gmail.com&can=1) | -
 [crbug-998548](https://crbug.com/998548) | MojoJS POC | UAF in ImageCapture | CVE-2019-13687, M-76, M-77, M-78, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
 [crbug-997190](https://crbug.com/997190) | Patch POC | UAF in MediaSession (Android) | CVE-2019-5876, M-76, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
+[crbug-996741](https://crbug.com/996741) | Patch POC | Logic Bug in Payment Handler API | M-76 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com&can=1) | [p0-1928](https://crbug.com/project-zero/1928)
 [crbug-995964](https://crbug.com/995964) | MojoJS POC | UAF in VideoCapture | CVE-2019-13688, M-77, M-78, reward-20000 | [Man Yue Mo](https://crbug.com/?can=1&q=reporter%3Ammo%40semmle.com) | -
 [crbug-993223](https://crbug.com/993223) | HTML POC | UAF in Payment | M-77, reward-5000 | [chromium.khalil](https://crbug.com/?q=reporter%3Achromium.khalil%40gmail.com&can=1) | [crbug-992285](https://crbug.com/992285)
 [crbug-987261](https://crbug.com/987261) | HTML POC | Logic Bug in WebUI | - | [Vladimir Metnew](https://crbug.com/?q=reporter%3Avladimirmetnew%40gmail.com%20OR%20Vladimir%20Metnew&can=1) | -
