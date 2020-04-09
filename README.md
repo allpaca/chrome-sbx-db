@@ -7,6 +7,7 @@ Issue | Type | Summary | Label | Reporter | Links
 -- | -- | -- | -- | -- | --
 [crbug-1032170](https://crbug.com/1032170) | WriteUp | Logic Bug in Extension message verification | CVE-2020-6380, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [crbug-1031670](https://crbug.com/1031670#c15)  
 [crbug-1031653](https://crbug.com/1031653) | Patch POC | UAF in Desktop Media Picker | CVE-2019-13767, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [p0-1985](https://crbug.com/project-zero/1985), [crbug-1031142](https://crbug.com/1031142)  
+[crbug-1031142](https://crbug.com/1031142) | Full Chain Exploit | Logic Bug in Extensions (Site Isolation Bypass) | CVE-2019-13767, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [crbug-1031670](https://crbug.com/1031670)  
 [crbug-1027152](https://crbug.com/1027152) | Patch POC | Heap Overflow in PasswordFormManager | CVE-2019-13726, M-78 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [p0-1972](https://crbug.com/project-zero/1972)  
 [crbug-1025067](https://crbug.com/1025067) | MojoJS POC | UAF in BluetoothAdapter | CVE-2019-13725, M-78, M-79, reward-20000 | [Gengming Liu](https://crbug.com/?q=Gengming%20Liu%20OR%20l.dmxcsnsbh%40gmail.com&can=1), Jianyu Chen | - 
 [crbug-1024121](https://crbug.com/1024121) | MojoJS POC | UAF in WebBluetoothServiceImpl | CVE-2019-13723, M-78, M-79, reward-20000 | [Yuxiang Li](https://crbug.com/?q=reporter%3Axbalien29%40gmail.com&can=1) | - 
@@ -88,20 +89,17 @@ Issue | Type | Summary | Label | Reporter | Links
 
 ## Permission Denied Issues  
 
-Issue Number | Patch Version | Summary | Reporter 
+Issue Number | Chromium Review | Summary | Reporter 
 -- | -- | -- | -- 
-[crbug-1059686](https://crbug.com/1059686) | [80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2020-6449: Use after free in audio (Not Sure SBX) | Man Yue Mo
-[crbug-1057627](https://crbug.com/1057627) | [80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2020-6429: Use after free in audio (Not Sure SBX) | Man Yue Mo
-[crbug-1057593](https://crbug.com/1057593) | [80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2020-6428: Use after free in audio (Not Sure SBX) | Man Yue Mo
-[crbug-1055788](https://crbug.com/1055788) | [80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html) | [$TBD] High CVE-2020-6427: Use after free in audio (Not Sure SBX) | Man Yue Mo
-[crbug-1031670](https://crbug.com/1031670) | [80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html) | [$N/A] High CVE-2020-6425: Insufficient policy enforcement in extensions | Sergei Glazunov
-[crbug-1031142](https://crbug.com/1031142) | [80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html) | [$N/A] High CVE-2020-6424: Use after free in media (Not Sure SBX) | Sergei Glazunov
-[crbug-1045931](https://crbug.com/1045931) | [80.0.3987.122](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop_18.html) | [N/A] High CVE-2020-6407: Out of bounds memory access in streams (Not Sure SBX) | Sergei Glazunov
-[crbug-1035399](https://crbug.com/1035399) | [80.0.3987.122](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop.html) | [N/A] High CVE-2020-6385: Insufficient policy enforcement in storage, [p0-1991](https://crbug.com/project-zero/1991)  | Sergei Glazunov
-[crbug-1018677](https://crbug.com/1018677) | [79.0.3945.130](https://chromereleases.googleblog.com/2020/01/stable-channel-update-for-desktop_16.html) | [$TBD] Critical CVE-2020-6378: Use-after-free in speech recognizer  | Antti Levomäki, Christian Jalio
-[crbug-999311](https://crbug.com/999311) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$30000] Critical CVE-2019-5870: Use-after-free in media | Guang Gong
-[crbug-989797](https://crbug.com/989797) | [77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html) | [$3000] High CVE-2019-5874: External URIs may trigger other browsers | James Lee
-[crbug-959438](https://crbug.com/959438) | [76.0.3809.87](http://chromereleases.googleblog.com/2019/07/stable-channel-update-for-desktop_30.html) | [$TBD] High CVE-2019-5859: Some URIs can load alternative browsers | James Lee
+[crbug-1019161](https://crbug.com/1019161) | [bug:1019161](https://chromium-review.googlesource.com/q/bug:1019161) | [[81.0.4044.92](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_7.html)][$7500] High CVE-2020-6454: Use after free in extensions | Leecraso, Guang Gong
+[crbug-1059349](https://crbug.com/1059349) | [bug:1059349](https://chromium-review.googlesource.com/q/bug:1059349) | [[80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html)][$N/A] High CVE-2019-20503: Out of bounds read in usersctplib | Natalie Silvanovich
+[crbug-1031670](https://crbug.com/1031670) | [bug:1031670](https://chromium-review.googlesource.com/q/bug:1031670) | [[80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html)][$N/A] High CVE-2020-6425: Insufficient policy enforcement in extensions | Sergei Glazunov
+[crbug-1045931](https://crbug.com/1045931) | [bug:1045931](https://chromium-review.googlesource.com/q/bug:1045931) | [[80.0.3987.122](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop_18.html)][N/A] High CVE-2020-6407: Out of bounds memory access in streams (Not Sure SBX) | Sergei Glazunov
+[crbug-1035399](https://crbug.com/1035399) | [bug:1035399](https://chromium-review.googlesource.com/q/bug:1035399) | [[80.0.3987.122](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop.html)] [N/A] High CVE-2020-6385: Insufficient policy enforcement in storage, [p0-1991](https://crbug.com/project-zero/1991)  | Sergei Glazunov
+[crbug-1018677](https://crbug.com/1018677) | [bug:1018677](https://chromium-review.googlesource.com/q/bug:1018677) | [[79.0.3945.130](https://chromereleases.googleblog.com/2020/01/stable-channel-update-for-desktop_16.html)] [$TBD] Critical CVE-2020-6378: Use-after-free in speech recognizer  | Antti Levomäki, Christian Jalio
+[crbug-999311](https://crbug.com/999311) | [bug:999311](https://chromium-review.googlesource.com/q/bug:999311) | [[77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html)][$30000] Critical CVE-2019-5870: Use-after-free in media | Guang Gong
+[crbug-989797](https://crbug.com/989797) | [bug:989797](https://chromium-review.googlesource.com/q/bug:989797) | [[77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html)][$3000] High CVE-2019-5874: External URIs may trigger other browsers | James Lee
+[crbug-959438](https://crbug.com/959438) | [bug:959438](https://chromium-review.googlesource.com/q/bug:959438) | [[76.0.3809.87](http://chromereleases.googleblog.com/2019/07/stable-channel-update-for-desktop_30.html)][$TBD] High CVE-2019-5859: Some URIs can load alternative browsers | James Lee
 
 * It only includes Permission Denied Issues posted on [Chrome Releases Blog](https://chromereleases.googleblog.com/) (Latest 3 years).
 * It was searched by hands, so there may be something missing, too.  
@@ -146,6 +144,8 @@ Issue Number | Patch Version | Summary | Reporter
 * [hidd3ncod3s blog - Chrome IPC Internals](https://hiddencodes.wordpress.com/2012/08/07/chrome-ipc-internals-part-i/)
 
 ## Other Materials 
+* [Blue Forest Security (2020) - Exploiting CVE-2020-0041 - Part 1: Escaping the Chrome Sandbox](https://labs.bluefrostsecurity.de/blog/2020/03/31/cve-2020-0041-part-1-sandbox-escape/)
+* [Blue Forest Security (2020) - Exploiting CVE-2020-0041 - Part 2: Escalating to root](https://labs.bluefrostsecurity.de/blog/2020/04/08/cve-2020-0041-part-2-escalating-to-root/)
 * [Project Zero Blog - Escaping the Chrome Sandbox with RIDL (2020)](https://googleprojectzero.blogspot.com/2020/02/escaping-chrome-sandbox-with-ridl.html)
 * [Abdulrahman Al-Qabandi Blog (2019) - Microsoft Edge (Chromium): EoP via XSS to Potential RCE](https://leucosite.com/Edge-Chromium-EoP-RCE/)
 * [Blue Forest Security (2019) - Escaping the Chrome Sandbox via an IndexedDB Race Condition](https://labs.bluefrostsecurity.de/blog/2019/08/08/escaping-the-chrome-sandbox-via-an-indexeddb-race-condition/) 
