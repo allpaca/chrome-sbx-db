@@ -5,10 +5,12 @@ A Collection of Chrome Sandbox Escape POCs/Exploits for learning.
 
 Issue | Type | Summary | Label | Reporter | Links
 -- | -- | -- | -- | -- | --
-[crbug-1032170](https://crbug.com/1032170) | WriteUp | Logic Bug in Extension message verification | CVE-2020-6380, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [crbug-1031670](https://crbug.com/1031670#c15)  
-[crbug-1031653](https://crbug.com/1031653) | Patch POC | UAF in Desktop Media Picker | CVE-2019-13767, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [p0-1985](https://crbug.com/project-zero/1985), [crbug-1031142](https://crbug.com/1031142)  
-[crbug-1031142](https://crbug.com/1031142) | Full Chain Exploit | Logic Bug in Extensions (Site Isolation Bypass) | CVE-2019-13767, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [crbug-1031670](https://crbug.com/1031670)  
-[crbug-1027152](https://crbug.com/1027152) | Patch POC | Heap Overflow in PasswordFormManager | CVE-2019-13726, M-78 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [p0-1972](https://crbug.com/project-zero/1972)  
+[crbug-1062091](https://crbug.com/1062091) | MojoJS POC | UAF in InstalledAppProviderImpl | M-81, reward-25000 | [Tim Becker](https://crbug.com/?q=reporter%3Atjbecker%40theori.io&can=1) | [Theori Blog](https://theori.io/research/escaping-chrome-sandbox/) 
+[crbug-1055393](https://crbug.com/1055393) | HTML POC | UAF in Accessibility | M-81, M-82, reward-20000 | [Pawel Wylecial](https://crbug.com/?q=reporter%3Apawel%40blackowlsec.com&can=1) | [RedTeam Blog](https://blog.redteam.pl/2020/04/google-chrome-display-locking-fuzzing.html)
+[crbug-1041406](https://crbug.com/1041406) | HTML POC | UAF in Portals | reward-20000 | [Pawel Wylecial](https://crbug.com/?q=reporter%3Apawel%40blackowlsec.com&can=1) | [RedTeam Blog](https://blog.redteam.pl/2020/04/google-chrome-display-locking-fuzzing.html)
+[crbug-1035399](https://crbug.com/1035399) | Patch POC | Site Isolation Bypass in BlobURL | CVE-2020-6385, M-79 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [p0-1991](https://crbug.com/project-zero/1991) 
+[crbug-1031142](https://crbug.com/1031142) | Full Chain Exploit | UAF in DesktopMedia, Logic Bug in Extensions (Site Isolation Bypass) | CVE-2020-6380, CVE-2020-6424, CVE-2020-6425, CVE-2020-6435, CVE-2020-6485, CVE-2019-13767, M-79, M-80 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [crbug-1031653](https://crbug.com/1031653), [crbug-1031670](https://crbug.com/1031670), [crbug-1032158](https://crbug.com/1032158), [crbug-1032170](https://crbug.com/1032170), [crbug-1038996](https://crbug.com/1038996), [crbug-1047285](https://crbug.com/1047285), [p0-1985](https://crbug.com/project-zero/1985) 
+[crbug-1027152](https://crbug.com/1027152) | Patch POC | Heap Overflow in PasswordFormManager | CVE-2019-13726, M-78 | [Sergey Glazunov](https://crbug.com/?q=reporter%3Aserg.glazunov%40gmail.com%2Cglazunov%40google.com%20OR%20reward_to-glazunov_at_google.com&can=1) | [p0-1972](https://crbug.com/project-zero/1972) 
 [crbug-1025067](https://crbug.com/1025067) | MojoJS POC | UAF in BluetoothAdapter | CVE-2019-13725, M-78, M-79, reward-20000 | [Gengming Liu](https://crbug.com/?q=Gengming%20Liu%20OR%20l.dmxcsnsbh%40gmail.com&can=1), Jianyu Chen | - 
 [crbug-1024121](https://crbug.com/1024121) | MojoJS POC | UAF in WebBluetoothServiceImpl | CVE-2019-13723, M-78, M-79, reward-20000 | [Yuxiang Li](https://crbug.com/?q=reporter%3Axbalien29%40gmail.com&can=1) | - 
 [crbug-1024116](https://crbug.com/1024116) | MojoJS POC | OOB Access in WebBluetoothServiceImpl | CVE-2019-13724, M-78, reward-20000 | [Yuxiang Li](https://crbug.com/?q=reporter%3Axbalien29%40gmail.com&can=1) | - 
@@ -91,12 +93,15 @@ Issue | Type | Summary | Label | Reporter | Links
 
 Issue Number | Chromium Review | Summary | Reporter 
 -- | -- | -- | -- 
+[crbug-1073015](https://crbug.com/1073015) | [bug:1073015](https://chromium-review.googlesource.com/q/bug:1073015) | [[83.0.4103.61](https://chromereleases.googleblog.com/2020/05/stable-channel-update-for-desktop_19.html)][$20000] High CVE-2020-6465: Use after free in reader mode | Woojin Oh (@pwn_expoit)
+[crbug-1074706](https://crbug.com/1074706) | [bug:1074706](https://chromium-review.googlesource.com/q/bug:1074706) | [[83.0.4103.61](https://chromereleases.googleblog.com/2020/05/stable-channel-update-for-desktop_19.html)][$15000] High CVE-2020-6466: Use after free in media | Zhe Jin
+[crbug-1064891](https://crbug.com/1064891) | [bug:1064891](https://chromium-review.googlesource.com/q/bug:1064891) | [[81.0.4044.129](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_27.html)][$10000] High CVE-2020-6462: Use after free in task scheduling | Zhe Jin
+[crbug-1072983](https://crbug.com/1072983) | [bug:1072983](https://chromium-review.googlesource.com/q/bug:1072983) | [[81.0.4044.129](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_27.html)][$TBD] High CVE-2020-6461: Use after free in storage | Zhe Jin
+[crbug-1065298](https://crbug.com/1065298) | [bug:1065298](https://chromium-review.googlesource.com/q/bug:1065298) | [[81.0.4044.122](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_21.html)][$20000] High CVE-2020-6459: Use after free in payments | Zhe Jin 
+[crbug-1063566](https://crbug.com/1063566) | [bug:1063566](https://chromium-review.googlesource.com/q/bug:1063566) | [[81.0.4044.122](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_21.html)][$15000] High CVE-2020-6460: Insufficient data validation in URL formatting | Anonymous 
+[crbug-1067851](https://crbug.com/1067851) | [bug:1067851](https://chromium-review.googlesource.com/q/bug:1067851) | [[81.0.4044.113](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_15.html)][$TBD] Critical CVE-2020-6457: Use after free in speech recognizer | Leecraso, Guang Gong
 [crbug-1019161](https://crbug.com/1019161) | [bug:1019161](https://chromium-review.googlesource.com/q/bug:1019161) | [[81.0.4044.92](https://chromereleases.googleblog.com/2020/04/stable-channel-update-for-desktop_7.html)][$7500] High CVE-2020-6454: Use after free in extensions | Leecraso, Guang Gong
 [crbug-1059349](https://crbug.com/1059349) | [bug:1059349](https://chromium-review.googlesource.com/q/bug:1059349) | [[80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html)][$N/A] High CVE-2019-20503: Out of bounds read in usersctplib | Natalie Silvanovich
-[crbug-1031670](https://crbug.com/1031670) | [bug:1031670](https://chromium-review.googlesource.com/q/bug:1031670) | [[80.0.3987.149](https://chromereleases.googleblog.com/2020/03/stable-channel-update-for-desktop_18.html)][$N/A] High CVE-2020-6425: Insufficient policy enforcement in extensions | Sergei Glazunov
-[crbug-1045931](https://crbug.com/1045931) | [bug:1045931](https://chromium-review.googlesource.com/q/bug:1045931) | [[80.0.3987.122](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop_18.html)][N/A] High CVE-2020-6407: Out of bounds memory access in streams (Not Sure SBX) | Sergei Glazunov
-[crbug-1035399](https://crbug.com/1035399) | [bug:1035399](https://chromium-review.googlesource.com/q/bug:1035399) | [[80.0.3987.122](https://chromereleases.googleblog.com/2020/02/stable-channel-update-for-desktop.html)] [N/A] High CVE-2020-6385: Insufficient policy enforcement in storage, [p0-1991](https://crbug.com/project-zero/1991)  | Sergei Glazunov
-[crbug-1018677](https://crbug.com/1018677) | [bug:1018677](https://chromium-review.googlesource.com/q/bug:1018677) | [[79.0.3945.130](https://chromereleases.googleblog.com/2020/01/stable-channel-update-for-desktop_16.html)] [$TBD] Critical CVE-2020-6378: Use-after-free in speech recognizer  | Antti Levomäki, Christian Jalio
 [crbug-999311](https://crbug.com/999311) | [bug:999311](https://chromium-review.googlesource.com/q/bug:999311) | [[77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html)][$30000] Critical CVE-2019-5870: Use-after-free in media | Guang Gong
 [crbug-989797](https://crbug.com/989797) | [bug:989797](https://chromium-review.googlesource.com/q/bug:989797) | [[77.0.3865.75](http://chromereleases.googleblog.com/2019/09/stable-channel-update-for-desktop.html)][$3000] High CVE-2019-5874: External URIs may trigger other browsers | James Lee
 [crbug-959438](https://crbug.com/959438) | [bug:959438](https://chromium-review.googlesource.com/q/bug:959438) | [[76.0.3809.87](http://chromereleases.googleblog.com/2019/07/stable-channel-update-for-desktop_30.html)][$TBD] High CVE-2019-5859: Some URIs can load alternative browsers | James Lee
@@ -143,25 +148,40 @@ Issue Number | Chromium Review | Summary | Reporter
 * [The Chromium Projects - Security Tips for IPC](https://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc)
 * [hidd3ncod3s blog - Chrome IPC Internals](https://hiddencodes.wordpress.com/2012/08/07/chrome-ipc-internals-part-i/)
 
-## Other Materials 
+## Awesome Chrome Sandbox Escape
+* [Theori Blog (2020) - Cleanly Escaping the Chrome Sandbox](https://theori.io/research/escaping-chrome-sandbox/)
+* [Project Zero Blog (2020) - You Won't Believe what this One Line Change Did to the Chrome Sandbox](https://googleprojectzero.blogspot.com/2020/04/you-wont-believe-what-this-one-line.html)
+* [REDTEAM.PL Blog (2020) - Google Chrome display locking fuzzing](https://blog.redteam.pl/2020/04/google-chrome-display-locking-fuzzing.html)
 * [Blue Forest Security (2020) - Exploiting CVE-2020-0041 - Part 1: Escaping the Chrome Sandbox](https://labs.bluefrostsecurity.de/blog/2020/03/31/cve-2020-0041-part-1-sandbox-escape/)
 * [Blue Forest Security (2020) - Exploiting CVE-2020-0041 - Part 2: Escalating to root](https://labs.bluefrostsecurity.de/blog/2020/04/08/cve-2020-0041-part-2-escalating-to-root/)
-* [Project Zero Blog - Escaping the Chrome Sandbox with RIDL (2020)](https://googleprojectzero.blogspot.com/2020/02/escaping-chrome-sandbox-with-ridl.html)
+* [Project Zero Blog (2020) - Escaping the Chrome Sandbox with RIDL](https://googleprojectzero.blogspot.com/2020/02/escaping-chrome-sandbox-with-ridl.html)
+* [Project Zero Blog (2020) - A day^W^W Several months in the life of Project Zero - Part 1: The Chrome bug of suffering](https://googleprojectzero.blogspot.com/2020/02/several-months-in-life-of-part1.html)
+* [Project Zero Blog (2020) - A day^W^W Several months in the life of Project Zero - Part 2: The Chrome exploit of suffering](https://googleprojectzero.blogspot.com/2020/02/several-months-in-life-of-part2.html)
+* [REDTEAM.PL Blog (2019) - Google Chrome portal element fuzzing](https://blog.redteam.pl/2019/12/chrome-portal-element-fuzzing.html)
+* [KEEN Team (POC 2019) - Chrome Exploitation](http://www.powerofcommunity.net/poc2019/Gengming.pdf)
 * [Abdulrahman Al-Qabandi Blog (2019) - Microsoft Edge (Chromium): EoP via XSS to Potential RCE](https://leucosite.com/Edge-Chromium-EoP-RCE/)
 * [Blue Forest Security (2019) - Escaping the Chrome Sandbox via an IndexedDB Race Condition](https://labs.bluefrostsecurity.de/blog/2019/08/08/escaping-the-chrome-sandbox-via-an-indexeddb-race-condition/) 
+* [KEEN Team (Blackhat USA 2019) - The Most Secure Browser? Pwning Chrome from 2016 to 2019](https://i.blackhat.com/USA-19/Wednesday/us-19-Feng-The-Most-Secure-Browser-Pwning-Chrome-From-2016-To-2019.pdf)
 * [Exodus Intelligence (2019) - WINDOWS WITHIN WINDOWS: ESCAPING THE CHROME SANDBOX WITH A WIN32K NDAY](https://blog.exodusintel.com/2019/05/17/windows-within-windows/)
+* [Project Zero Blog (2019) - Virtually Unlimited Memory: Escaping the Chrome Sandbox](https://googleprojectzero.blogspot.com/2019/04/virtually-unlimited-memory-escaping.html)
 * [Tencent Xuanwu Lab (Blackhat Asia 2019) - Attacking Browser Sandbox: Live Persistently and Prosperously](https://i.blackhat.com/asia-19/Fri-March-29/bh-asia-Ma-Attacking-Browser-Sandbox.pdf)
 * [Flanker Sky (2019) - Galaxy Leapfrogging: Pwning the Galaxy S8](https://blog.flanker017.me/galaxy-leapfrogging-pwning-the-galaxy-s8/)
 * [WCTF 2019 - Mojojojo](https://drive.google.com/drive/u/0/folders/1xijouA9fj1YUrY97wyoEQCZ5Q3tRWNOq)  
 * [Eternal Stories (2019) - Google CTF 2019 monochromatic writeup](http://eternal.red/2019/monochromatic-writeup/)
+* [Niklas Baumstark (OffensiveCon 2019) - IPC you outside the sandbox: One bug to rule the Chrome broker](http://paper.vulsee.com/OffensiveCon2019/IPC%20You%20Outside%20the%20Sandbox%20-%20One%20bug%20to%20Rule%20the%20Chrome%20Broker/chrome_ipc_exploitation_offensivecon19.pdf)
+* [Ned Williamson (POC 2018) - Exploiting Chrome IPC
+](http://www.powerofcommunity.net/poc2018/ned.pdf)
 * [Google CTF 2018 - pwn-mojo](https://github.com/google/google-ctf/tree/master/2018/finals/pwn-mojo)  
 * [360 Alpha Team (CanSecWest 2018) - Attacks and analysis of the Samsung S8 from Mobile PWN2OWN](https://cansecwest.com/slides/2018/Attacks%20and%20Analysis%20of%20the%20Samsung%20S8%20from%20Mobile%20PWN2OWN%20-%20Guang%20Gong%20and%20Jianjun%20Dai,%20Qihoo%20360.pdf)
-* [Microsoft Blog - Browser security beyond sandboxing (2017)](https://www.microsoft.com/security/blog/2017/10/18/browser-security-beyond-sandboxing/?source=mmpc)
-* [X41 - Browser Security White Paper (2017)](https://paper.seebug.org/papers/Archive/X41-Browser-Security-White-Paper.pdf)
+* [Microsoft Blog (2017) - Browser security beyond sandboxing](https://www.microsoft.com/security/blog/2017/10/18/browser-security-beyond-sandboxing/?source=mmpc)
+* [X41 (2017) - Browser Security White Paper](https://paper.seebug.org/papers/Archive/X41-Browser-Security-White-Paper.pdf)
+* [Guang Gong (Syscan 2017) - Butterfly Effect and Program Mistake](https://github.com/secmob/pwnfest2016/blob/master/Butterfly%20Effect%20and%20Program%20Mistake(SyScan2107).pdf)
 * [KEEN Team (CanSecWest 2017) - Pwning the Nexus of Every Pixel](https://cansecwest.com/slides/2017/CSW2017_QidanHe-GengmingLiu_Pwning_Nexus_of_Every_Pixel.pdf)
 * [KEEN Team (DEFCON24 2016) - Escaping The Sandbox By Not Breaking It](https://papers.put.as/papers/macosx/2016/sandbox_defcon.pdf)
+* [Guang Gong (CanSecWest 2016) - Pwn a Nexus device with a single vulnerability](https://github.com/secmob/cansecwest2016/blob/master/Pwn%20a%20Nexus%20device%20with%20a%20single%20vulnerability.pdf)
 * [James Forshaw (Troopers 2016) - The Joy of Sandbox Mitigations](https://www.troopers.de/media/filer_public/f6/07/f6076037-85e0-42b7-9a51-507986edafce/the_joy_of_sandbox_mitigations_export.pdf)
 * [James Forshaw (Nullcon 2015) - The Windows Sandbox Paradox](https://nullcon.net/website/archives/ppt/goa-15/the-windows-sandbox-paradox.pdf)
 * [Guang Gong (BlackHat USA 2015) - Fuzzing Android System Services by Binder Call to Escalate Privilege](https://www.blackhat.com/docs/us-15/materials/us-15-Gong-Fuzzing-Android-System-Services-By-Binder-Call-To-Escalate-Privilege.pdf)
-* [A Tale of Two Pwnies (Part 1)](https://blog.chromium.org/2012/05/tale-of-two-pwnies-part-1.html)  
-* [A Tale Of Two Pwnies (Part 2)](https://blog.chromium.org/2012/06/tale-of-two-pwnies-part-2.html)  
+* [Chrome Security Team (2014) - Pwnium 4, Pwn2Own 2014: Make it rain](https://docs.google.com/presentation/d/1c90yZXNHs7w8oi7uXveEOCx5-8O_NZIxolEKalscuAQ/edit#slide=id.g36e7e5d9b_00)
+* [Chromium Blog (2012) - A Tale of Two Pwnies (Part 1)](https://blog.chromium.org/2012/05/tale-of-two-pwnies-part-1.html)  
+* [Chromium Blog (2012) - A Tale Of Two Pwnies (Part 2)](https://blog.chromium.org/2012/06/tale-of-two-pwnies-part-2.html)  
